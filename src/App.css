@@ -1,0 +1,95 @@
+:root {
+    
+    --text-color: #333;
+    --background-color: #fff;
+   --project-card-bg: #ffffff00;
+    --button-color: #4a90e2;
+    --button-text-color: #fff;
+    --form-text-color: #333;
+    --footer-text-color: #666;
+}
+[data-theme='dark'] {
+    
+    --text-color: #fff;
+    --background-color: #222;
+   --project-card-bg: #fff;
+    --button-color: #fff;
+    --button-text-color: #222;
+    --form-text-color: #fff;
+    --footer-text-color: #bbb;
+}
+body {
+    
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+h1, h2, h3, p {
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+h2,h3 p {
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif, monospace;
+}
+h1,h2,h3 p{
+    text-transform: uppercase;
+}
+h2,h3 {
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-family: monospace, sans-serif;
+}
+h1 {
+    font-family:  monospace, sans-serif;
+    font-size: 2rem;
+}
+p {
+    font-size: 1rem;
+   font-weight: 400;
+   font-family: monospace ,sans-serif;
+}
+.sectionTitle {
+    
+    margin-bottom: 30px;
+}
+.hover {
+cursor: pointer;
+} 
+@media(width >= 800px){
+    #root{
+        gap: 100px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2,
+    h3{
+        font-size: 24px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .sectionTitle{
+        margin-bottom: 60px;
+    }
+@media(width >= 1400px){
+    #root{
+        gap: 200px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    
+    .sectionTitle{
+        margin-bottom: 75px;
+    }
+}
+}
